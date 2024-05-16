@@ -10,7 +10,7 @@
             <center>
                 <textarea for="saisie" name="saisie" class="saisie" id="saisie" ></textarea><br>
                 <textarea for="leresultat" name="resultat" class="resultat" disabled></textarea><br><br>
-                <input type="button" value="AC" class="button_ac" onclick="cleaner()">
+                <input type="button" value="AC" class="button_ac" onclick="refraich()">
                 <input type="button" value="()" class="button_parenthese" onclick="parenthese('%')">
                 <input type="button" value="%" class="button_modulo" onclick="ajouter('%')">
                 <input type="button" value="÷" class="button_diviseur" onclick="ajouter('÷')"><br>
@@ -28,7 +28,7 @@
                 <input type="button" value="+" class="button_plus" onclick="ajouter('+')"><br>
                 <input type="button" value="0" class="button_0" onclick="ajouter('0')">
                 <input type="button" value="." class="button_point" onclick="ajouter('.')">
-                <input type="button" value="◄" class="button_delete" onclick="Delete()">
+                <input type="button" value="◄" class="button_delete" onclick="effacer()">
                 <input type="button" value="=" class="button_egal" onclick="resultats()">
             </center>
         </form>

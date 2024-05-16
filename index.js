@@ -73,6 +73,16 @@ function resultats(){
    
 }
 
+function refraich(){
+    location.reload();
+}
+
+
+function effacer(){
+    let contenu = window.document.calculatrice.saisie.value;
+    window.document.calculatrice.saisie.value = contenu.substring(0,contenu.length-1);
+}
+
 
 
 
