@@ -1,0 +1,52 @@
+
+body{
+    background-color: rgb(39, 37, 37);
+}
+textarea{
+        width: 212px;
+        text-align: right;
+        color: aliceblue;
+        background-color: rgb(39, 37, 37);
+        overflow: hidden;
+        resize: none;
+}
+
+.saisie{
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+textarea:focus{
+    border: none;
+    background-color: gray;
+}
+.resultat{
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+input{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+center{
+    margin-top: 25px;
+}
+
+/* --------------------------------------coloration's button */
+
+.button_ac{
+    background-color: rgb(168, 223, 245);
+}
+.button_parenthese,.button_modulo,.button_diviseur,.button_x,.button_moin,.button_plus{
+    background-color: rgb(61, 182, 243);
+}
+
+.button_1,.button_2,.button_3,.button_4,.button_5,.button_6,.button_7,.button_8,.button_9,.button_0,.button_point,.button_delete{
+    color: aliceblue;
+    background-color: rgb(39, 37, 37);
+}
+
