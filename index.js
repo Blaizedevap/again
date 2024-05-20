@@ -5,29 +5,7 @@ function ajouter(caracter){
 function multiplication(ledernier){ //gestionnaire de la multiplicaton     NB je cherche a ecouter le changement d etat du champ SAISIE                 !      
     let decompttext = ledernier.length;
     console.log(ledernier);
-    // console.log(decompttext);
-    // let multiple ="*";
-    // let put = document.getElementById("saisie");
-    // let tab =['(',')','.','0','1','2','3','4','5','6','7','8','9'];
-    // put.addEventListener("change",(even)=>{
-    //     console.log("changer")
-    //     let latouche = even.target.value;
-       
-    //     let i =0;
-
-    //     for(i==0; i<tab.length; i++){
-    //         if(tab[i] == latouche){
-    //             window.document.calculatrice.saisie.value = window.document.calculatrice.saisie.value+multiple;
-    //         }
-    //     }
-        
-    // })
-
-    // console.log("tu y es");   
-
-
-    // window.document.calculatrice.saisie.value= window.document.calculatrice.saisie.value+multiple;
-}
+   }
 
 
 
@@ -69,12 +47,20 @@ function resultats(){
     }else{
         window.document.calculatrice.resultat.value= eval(chain);
     }
-    
+   let valeur = localStorage;
+   valeur.setItem("h1",chain);
+   let historique = document.getElementById("fhisto");
+    historique.textContent = valeur.getItem("h1");
    
 }
 
 function refraich(){
     location.reload();
+//     let valeur = localStorage;
+//    valeur.setItem("h1",chain);
+//    let historique = document.getElementById("fhisto");
+    
+//     historique.textContent = valeur.getItem("h1");
 }
 
 
@@ -85,6 +71,22 @@ function effacer(){
 
 
 
+let lehistorique = document.getElementById("lehistorique");
+
+lehistorique.addEventListener("change", histo);
+
+function histo(even){
+    // let lop = document.getElementById('fhisto');
+    //  lop.value=window.document.calculatrice.saisie.value;
+
+    // window.document.calculatrice.saisie.value = even.target.value;
+
+    // console.log("coucu")
+    window.document.calculatrice.resultat.value=" ";
+    // console.log( window.document.calculatrice.saisie.value = e.target.value);
+
+    
+}
 
 
 

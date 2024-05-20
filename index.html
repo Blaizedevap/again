@@ -10,6 +10,16 @@
             <center>
                 <textarea for="saisie" name="saisie" class="saisie" id="saisie" ></textarea><br>
                 <textarea for="leresultat" name="resultat" class="resultat" disabled></textarea><br><br>
+                <select name="leselect" id="lehistorique" class="his">
+                    <option  name="firstoption"  placeholder="historique">historique</option>
+                    <option value="" id="fhisto"><script>
+                        let el = localStorage;
+                        el.getItem("h1");
+                    </script></option>
+                    <!-- <option value="1+2">1+2</option>
+                    <option value="4/2">4/2</option>
+                    <option value="4">4</option> -->
+                </select><br>
                 <input type="button" value="AC" class="button_ac" onclick="refraich()">
                 <input type="button" value="()" class="button_parenthese" onclick="parenthese('%')">
                 <input type="button" value="%" class="button_modulo" onclick="ajouter('%')">

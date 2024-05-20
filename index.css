@@ -10,7 +10,16 @@ textarea{
         overflow: hidden;
         resize: none;
 }
-
+.his{
+    position:relative;
+    right: 65px;
+    margin-bottom: 8px;
+    margin-top: -8px;
+    font-size: 8px;
+    width: 80px;
+    appearance: none;
+    overflow: hidden;
+}
 .saisie{
     border-bottom: none;
     border-top-right-radius: 5px;
